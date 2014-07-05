@@ -1,5 +1,5 @@
 <?php
-//add symbols and link to dictionary..
+//ink to dictionary..
 //cut down on some code and add comment all over
 //try bootsrap
 //validate
@@ -26,7 +26,7 @@ $words = array(
 	'boosted'
 	);
 $number = rand(1,1000);
-$symbol = array('!', '@', '#', '$', '%', '^', '&', '*');
+$symbol = array('!', '@', '#', '$', '%', '^', '&', '*','~', '=', '+', '(', ')', '{', '}');
 $password = '';
 
 foreach($_POST as $value => $key){
@@ -53,7 +53,7 @@ foreach($_POST as $value => $key){
 
 	if($value == "add_symbol"){
 			if($key == "on"){		
-				$password .= $symbol[rand(0, 7)];
+				$password .= $symbol[rand(0, 14)];
 
 			}
 	}

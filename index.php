@@ -19,7 +19,7 @@
 
 <form action='index.php' method='POST'>
 	<p>
-				<!--upper case first letter or no-->
+				
 				<label for='number_of_words'>Number of Words:</label>
 				<select name = 'number_of_words'>
 					<option value ='2'>2</option>
@@ -52,6 +52,6 @@
 </form>
 <img src = "images/password_strength.png" alt = "sketch of password strength in a xkcd password generator">
 <!-- design and corrct place...-->
-<p class = "description"> xkcd password generators are.....</p>
+<p class = "description"> xkcd password</p>
 </body>
 </html>
