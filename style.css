@@ -8,7 +8,11 @@ img{
     max-width: 80%;
     height: auto;
     width: auto;
+    padding-top: 30px;
 }	
 form{
+	text-align: center;
+}
+.password{
 	text-align: center;
 }

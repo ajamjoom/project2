@@ -15,6 +15,8 @@
 <body>
 <h1>xkcd Password Generator</h1>
 
+<div class = "password"><?php echo $password ?></div>
+
 <form action='index.php' method='POST'>
 	<p>
 				<!-- limit of 10 isn't working-->
@@ -32,7 +34,6 @@
 		
 				<input type='submit' value='Generate Password'>
 </form>
-<?php echo $password ?>
 <img src = "images/password_strength.png" alt = "sketch of password strength in a xkcd password generator">
 </body>
 </html>
