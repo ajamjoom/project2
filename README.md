@@ -10,3 +10,6 @@ A simpe program that generates random xkcd style passwords.
 No login required
 
 ##Outside code
+
+###notice
+I have faced some difficulty with the forms tag in index.php (html) so I opened the "view source" page of your sample and used the forms tag format that I found there.
