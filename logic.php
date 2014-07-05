@@ -1,5 +1,4 @@
 <?php
-print_r($_POST);
 $words = array(
 	'i', 
 	'james', 

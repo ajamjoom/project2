@@ -17,7 +17,7 @@
 
 <form action='index.php' method='POST'>
 	<p>
-
+				<!-- limit of 10 isn't working-->
 				<label for='number_of_words'>Number of Words:</label>
 				<input maxlength=10 type='text' name='number_of_words' id='number_of_words' value=''>  (Max 10)
 				<br>
