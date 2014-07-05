@@ -65,3 +65,43 @@ foreach($_POST as $value => $key){
 		}
 	}
 }
+//getting list of words from outside sources doesn't work yet
+for ($i=1, $j = 2; $i <= 29; $i = $i+2,$j=$j+2 ) { 
+	if($i<9 && $j<10){
+		$wordlist = file_get_contents('http://www.paulnoll.com/Books/Clear-English/words-0'.$i.'-0'.$j.'-hundred.html');
+	}
+	elseif($i == 9 && $j==10){
+		$wordlist = file_get_contents('http://www.paulnoll.com/Books/Clear-English/words-0'.$i.'-'.$j.'-hundred.html');
+
+	}
+
+	else{
+		$wordlist = file_get_contents('http://www.paulnoll.com/Books/Clear-English/words-'.$i.'-'.$j.'-hundred.html');
+
+	}
+
+	//print_r($wordlist);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
