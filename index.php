@@ -16,7 +16,7 @@
 <h1>xkcd Password Generator</h1>
 
 <form action='index.php' method='POST'>
-	<p class = 'options'>
+	<p>
 
 				<label for='number_of_words'>Number of Words:</label>
 				<input maxlength=10 type='text' name='number_of_words' id='number_of_words' value=''>  (Max 10)
@@ -32,7 +32,7 @@
 		
 				<input type='submit' value='Generate Password'>
 </form>
-
+<?php echo $password ?>
 <img src = "images/password_strength.png" alt = "sketch of password strength in a xkcd password generator">
 </body>
 </html>
