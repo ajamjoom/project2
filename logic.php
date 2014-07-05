@@ -2,6 +2,8 @@
 //add symbols and link to dictionary..
 //cut down on some code and add comment all over
 //try bootsrap
+//validate
+
 $words = array(
 	'i', 
 	'james', 
@@ -30,7 +32,6 @@ $password = '';
 foreach($_POST as $value => $key){
 	
 	if( $value == "number_of_words"){
-		//add "-" the seperator between the words
 		for($i = 0; $i < $_POST[$value]; $i++){
 
 			if($i == 0){
@@ -55,5 +56,12 @@ foreach($_POST as $value => $key){
 				$password .= $symbol[rand(0, 7)];
 
 			}
+	}
+//fix or understand how this code is working well or is  it?
+	if($value == "caps_first_letter"){
+			if($key == "on"){		
+				$password = ucwords($password);
+
+		}
 	}
 }

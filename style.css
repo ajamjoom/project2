@@ -12,14 +12,12 @@ img{
 }	
 form{
 	text-align: center;
-/* commit this line*/
 	line-height:1.6em;
 
 }
 /* add margins and box style change colors and font and text size*/
 .password{
 	text-align: center;
-	/* commit all this */
 	border-color: black;
 	border-width: 1px;
 	border-style: solid;
