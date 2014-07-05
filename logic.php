@@ -1,4 +1,7 @@
 <?php
+//add symbols and link to dictionary..
+//cut down on some code and add comment all over
+//try bootsrap
 $words = array(
 	'i', 
 	'james', 

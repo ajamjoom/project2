@@ -12,7 +12,21 @@ img{
 }	
 form{
 	text-align: center;
+/* commit this line*/
+	line-height:1.6em;
+
 }
+/* add margins and box style change colors and font and text size*/
 .password{
 	text-align: center;
+	/* commit all this */
+	border-color: black;
+	border-width: 1px;
+	border-style: solid;
+	border-color: white;
+	background-color: #a7cece;
+	padding: 15px;
+	margin: 20px;
+	color: #444444;
+	font-family:Georgia, "Times New Roman", Times, serif;
 }
