@@ -84,9 +84,6 @@ for ($i=1, $j = 2; $i <= 29; $i = $i+2,$j=$j+2 ) {
 }
 
 
-print_r($wordlist);
-
-
 
 
 
