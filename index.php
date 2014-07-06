@@ -42,7 +42,6 @@
 				<input type='checkbox' name='add_symbol' id='add_symbol' > 
 				<label for='add_symbol'>Add a symbol</label>
 				<br>
-								<!--better name-->
 
 				<input type='checkbox' name='caps_first_letter' id='caps_first_letter' > 
 				<label for='add_symbol'>Capitalize first letter</label>
@@ -51,7 +50,7 @@
 				<input type='submit' value='Generate Password'>
 </form>
 <img src = "images/password_strength.png" alt = "sketch of password strength in a xkcd password generator">
-<!-- design and corrct place...-->
+<!-- design, write down correct despription and put in corrct place...-->
 <p class = "description"> xkcd password</p>
 </body>
 </html>

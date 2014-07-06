@@ -1,30 +1,9 @@
 <?php
-//ink to dictionary..
 //cut down on some code and add comment all over
 //try bootsrap
 //validate
-
-$words = array(
-	'i', 
-	'james', 
-	'jordan', 
-	'usa', 
-	'zoo', 
-	'harvard', 
-	'stanford', 
-	'saudi', 
-	'calculator', 
-	'notebook', 
-	'wiggle', 
-	'chinmay', 
-	'abdul', 
-	'love', 
-	'hat', 
-	'naked', 
-	'green', 
-	'machine', 
-	'boosted'
-	);
+$wordlist = file_get_contents('https://d1b10bmlvqabco.cloudfront.net/attach/ht1cmoh734q7lz/hwtu32ltlu3kx/hx6nwrvbr9fu/wordlist.txt');
+$words = preg_split("/[\s,]+/", $wordlist);
 $number = rand(1,1000);
 $symbol = array('!', '@', '#', '$', '%', '^', '&', '*','~', '=', '+', '(', ')', '{', '}');
 $password = '';
@@ -35,10 +14,10 @@ foreach($_POST as $value => $key){
 		for($i = 0; $i < $_POST[$value]; $i++){
 
 			if($i == 0){
-				$password .= $words[rand(0, 18)];
+				$password .= $words[rand(0, 4999)];
 		}
 		else{
-			$password .= '-'.$words[rand(0, 18)];
+			$password .= '-'.$words[rand(0, 4999)];
 
 		}
 		}
@@ -65,40 +44,3 @@ foreach($_POST as $value => $key){
 		}
 	}
 }
-//getting list of words from outside sources doesn't work yet
-$wordlist = '';
-for ($i=1, $j = 2; $i <= 29; $i = $i+2,$j=$j+2 ) { 
-	
-	if($i<9 && $j<10){
-		$wordlist .= file_get_contents('http://www.paulnoll.com/Books/Clear-English/words-0'.$i.'-0'.$j.'-hundred.html');
-	}
-	
-	elseif($i == 9 && $j==10){
-		$wordlist .= file_get_contents('http://www.paulnoll.com/Books/Clear-English/words-0'.$i.'-'.$j.'-hundred.html');
-
-	}
-
-	else{
-		$wordlist .= file_get_contents('http://www.paulnoll.com/Books/Clear-English/words-'.$i.'-'.$j.'-hundred.html');
-	}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
