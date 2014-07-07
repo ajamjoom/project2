@@ -3,20 +3,18 @@
 <head>
 
 	<title>xkcd Password Generator</title>
-	
 	<meta charset='utf-8'>
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<link rel='stylesheet' href='style.css' type='text/css'>
 	<?php require 'logic.php'; ?>
 
-
-
 </head>
 <body>
+
 <h1>xkcd Password Generator</h1>
 
 <center><div class = "password"><?php echo $password ?></div></center>
-
+<!-- Got this format of the <form> from the sample given to us on the courses' website-->
 <form action='index.php' method='POST'>
 	<p>
 				
@@ -46,11 +44,12 @@
 				<input type='checkbox' name='caps_first_letter' id='caps_first_letter' > 
 				<label for='add_symbol'>Capitalize first letter</label>
 	</p>
-	<!-- Don't refresh the whole page rather just create and display the new password-->
 				<input type='submit' value='Generate Password'>
 </form>
+
 <p class = "description"> Create passwords that are easy to remember but freakin hard to break!!!</p>
 
 <img src = "images/password_strength.png" alt = "sketch of password strength in a xkcd password generator">
+
 </body>
 </html>

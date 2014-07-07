@@ -1,42 +1,41 @@
 <?php
-//cut down on some code and add comment all over
-//try bootsrap
-//validate
+
 $wordlist = file_get_contents('https://d1b10bmlvqabco.cloudfront.net/attach/ht1cmoh734q7lz/hwtu32ltlu3kx/hx6nwrvbr9fu/wordlist.txt');
+//got this from a refernce example that had similar format to the file that I am scraping!!!
 $words = preg_split("/[\s,]+/", $wordlist);
-$number = rand(1,1000);
-$symbol = array('!', '@', '#', '$', '%', '^', '&', '*','~', '=', '+', '(', ')', '{', '}');
 $password = '';
 
 foreach($_POST as $value => $key){
 	
 	if( $value == "number_of_words"){
 		for($i = 0; $i < $_POST[$value]; $i++){
-
+			//if it's the first word then don't add a hyphen infront of it
 			if($i == 0){
 				$password .= $words[rand(0, 4999)];
 		}
+		//all words other than the first word(add hyphen before placing them)
 		else{
 			$password .= '-'.$words[rand(0, 4999)];
 
-		}
+			}
 		}
 	}
 
 	if($value == "add_number"){
 			if( $key == "on"){
-				$password .= $number;
+				$number = rand(1,1000);
+				$password .= '-'.$number;
 			}
 			
 	}
 
 	if($value == "add_symbol"){
 			if($key == "on"){		
-				$password .= $symbol[rand(0, 14)];
+				$symbol = array('!', '@', '#', '$', '%', '^', '&', '*','~', '=', '+', '(', ')', '{', '}');
+				$password .= '-'.$symbol[rand(0, 14)];
 
 			}
 	}
-//fix or understand how this code is working well or is  it?
 	if($value == "caps_first_letter"){
 			if($key == "on"){		
 				$password = ucwords($password);
