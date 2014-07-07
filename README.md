@@ -3,6 +3,10 @@
 ##Live URL
 <http://ajamjoom-p2.gopagoda.com/>
 
+##github URLs
+github page URL = <https://github.com/ajamjoom/project2>
+SSH clone URL = <git@github.com:ajamjoom/project2.git>
+
 ##Description
 A simpe program that generates random xkcd style passwords.
 
